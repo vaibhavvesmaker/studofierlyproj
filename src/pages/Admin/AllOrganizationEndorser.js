@@ -39,7 +39,7 @@ export default class AllOrganizationEndorser extends Component {
       <LoadComp />
     ) : (
       <div className="admin">
-        <h2 className="card-heading">All Registered Organization-Endorser</h2>
+        <h2 className="card-heading">All Registered Organization-Endorser/Faculties</h2>
         <br />
         {this.state.orgends?.map((orgend, index) => (
           <OrgEndCard key={index} OrgEndContractAddress={orgend} />

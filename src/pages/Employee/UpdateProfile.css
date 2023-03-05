@@ -6,9 +6,9 @@
   justify-items: center;
   align-items: center;
   border: 2px solid rgb(255, 255, 255);
-  background-color: #393b3fa6;
+  background-color: #612644ea;
   border-radius: 50%;
-  box-shadow: inset 0px 0px 10px #c5c6c7;
+  box-shadow: inset 0px 0px 10px #d8aacb;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .notifications {
-  background: rgba(31, 30, 30, 0.581);
+  background: rgba(59, 6, 50, 0.581);
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -73,7 +73,7 @@
 }
 
 .notification-sidechat-subheading {
-  color: #c5c6c7 !important;
+  color: #d8aacb !important;
 }
 
 .header-row > th {
@@ -90,5 +90,5 @@
 
 .row-cell-container :hover {
   transform: scale(1.01, 1.01);
-  background: rgba(31, 30, 30, 0.1);
+  background: rgba(59, 6, 50, 0.581);
 }

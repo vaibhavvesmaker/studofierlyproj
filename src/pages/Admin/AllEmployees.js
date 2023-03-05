@@ -39,7 +39,7 @@ export default class AllEmployees extends Component {
       <LoadComp />
     ) : (
       <div className="admin">
-        <h2 className="card-heading">All Registered Employees</h2>
+        <h2 className="card-heading">All Registered Employees/Students</h2>
         <br />
         {this.state.employees?.map((employee, index) => (
           <EmployeeCard key={index} employeeContractAddress={employee} />
