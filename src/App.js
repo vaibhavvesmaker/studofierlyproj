@@ -85,6 +85,7 @@ function App() {
   const adminRoutes = () => {
     return (
       <Switch>
+        {/* Student employees */}
         <Route path="/" exact component={AllEmployees} />
         <Route
           path="/all-organization-endorser"
@@ -101,6 +102,12 @@ function App() {
     return (
       <Switch>
         <Route path="/" exact component={EmployeePage} />
+        <Route path="/all-employees" exact component={AllEmployees} />
+        <Route
+          path="/all-organization-endorser"
+          exact
+          component={AllOrganizationEndorser}
+        />
         <Route path="/update-profile" exact component={UpdateProfile} />
         <Route path="/notifications" exact component={NotificationsEmployee} />
       </Switch>
@@ -111,6 +118,12 @@ function App() {
     return (
       <Switch>
         <Route path="/" exact component={Organization} />
+        <Route path="/all-employees" exact component={AllEmployees} />
+        <Route
+          path="/all-organization-endorser"
+          exact
+          component={AllOrganizationEndorser}
+        />
         <Route path="/endorse-skill" exact component={EndorseSkill} />
         <Route path="/endorse-section" exact component={Endorse} />
         <Route path="/notifications" exact component={NotificationsOrg} />
@@ -122,6 +135,7 @@ function App() {
     return (
       <Switch>
         <Route path="/" exact component={NoRole} />
+        
         <Route path="/notifications" exact component={Notifications} />
       </Switch>
     );

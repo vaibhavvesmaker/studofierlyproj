@@ -49,7 +49,7 @@ contract Admin {
     }
   }
 
-  /****************************************************************USER SECTION**************************************************/
+  /****************************************************************USER SECTION- issue hai**************************************************/
 
   function isEmployee(address _employeeAddress) public view returns (bool) {
     return registeredEmployeesmap[_employeeAddress] != address(0x0);

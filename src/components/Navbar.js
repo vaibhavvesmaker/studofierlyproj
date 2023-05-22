@@ -107,7 +107,7 @@ class Navbar extends Component {
                   name="Employees"
                   active={activeItem === "Employees"}
                   onClick={this.handleItemClick}
-                />
+                />                
                 <Menu.Item
                   as={Link}
                   to="/all-organization-endorser"
@@ -142,6 +142,20 @@ class Navbar extends Component {
                 />
                 <Menu.Item
                   as={Link}
+                  to="/all-organization-endorser"
+                  name="FacultiesOrgEnd"
+                  active={activeItem === "Organization Endorsers"}
+                  onClick={this.handleItemClick}
+                />
+                 <Menu.Item
+                  as={Link}
+                  to="/all-employees"
+                  name="StudentEmp"
+                  active={activeItem === "AllEmp"}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  as={Link}
                   to="/update-profile"
                   name="Update Profile"
                   active={activeItem === "Update Profile"}
@@ -164,6 +178,20 @@ class Navbar extends Component {
                   to="/"
                   name="Info Page"
                   active={activeItem === "Info Page"}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  as={Link}
+                  to="/all-organization-endorser"
+                  name="Faculties_OrgEnd"
+                  active={activeItem === "Organization Endorsers"}
+                  onClick={this.handleItemClick}
+                />
+                 <Menu.Item
+                  as={Link}
+                  to="/all-employees"
+                  name="Student_Emp"
+                  active={activeItem === "AllEmp"}
                   onClick={this.handleItemClick}
                 />
                 <Menu.Item

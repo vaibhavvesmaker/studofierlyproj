@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Button, Card, Dropdown, Form, Message } from "semantic-ui-react";
 import "./NoRole.css";
+import OrgEndCard from "../../components/OrgEndCard";
+import EmployeeCard from "../../components/EmployeeCard";
 import { messageAdmin } from "../../firebase/api.js";
 
 class NoRole extends Component {
@@ -152,6 +154,18 @@ class NoRole extends Component {
             </Form>
           </Card.Content>
         </Card>
+        {/* <h2 className="card-heading">All Registered Employees/Students</h2>
+        <br />
+        {this.state.employees?.map((employee, index) => (
+          <EmployeeCard key={index} employeeContractAddress={employee} />
+        ))}
+        <br />
+        <h2 className="card-heading">All Registered Organization-Endorser/Faculties</h2>
+        <br />
+        {this.state.orgends?.map((orgend, index) => (
+          <OrgEndCard key={index} OrgEndContractAddress={orgend} />
+        ))}
+        <br /> */}
         <br />
       </div>
     );
